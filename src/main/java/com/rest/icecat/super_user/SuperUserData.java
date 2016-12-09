@@ -8,7 +8,7 @@ public class SuperUserData {
 
     public final String URL = "https://bo.icecat.biz/restful/v2/descriptionblock/";
     public final String LOGIN_URL = "https://bo.icecat.biz/user/login";
-    public final String REQUIRED_KEY = "ASfW9179vRL6U_G_EKPCBc9vBj2C2c1m";
+    public final String REQUIRED_KEY = "";
     public final String TEXT_FILE_HOME = "/home/nikita/HomeJava/IcecatRestTestFramework/access_key.txt";
     public final String TEXT_FILE_NAME = "access_key.txt";
 
