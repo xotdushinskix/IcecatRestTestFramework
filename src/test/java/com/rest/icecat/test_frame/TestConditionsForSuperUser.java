@@ -22,7 +22,7 @@ public class TestConditionsForSuperUser {
     @BeforeClass
     public static void testAccessKey() throws IOException {
         AccessKeyPost accessKeyPost = new AccessKeyPost();
-        accessKeyPost.getAccessKey("ASfW9179vRL6U_G_EKPCBc9vBj2C2c1m");
+        accessKeyPost.getAccessKey("secr_info");
 
         deleteRequest = new DeleteRequest();
         superUserData = new SuperUserData();
