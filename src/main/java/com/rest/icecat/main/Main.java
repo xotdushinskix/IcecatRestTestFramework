@@ -1,18 +1,13 @@
 package com.rest.icecat.main;
 
-import com.google.common.base.Splitter;
 import com.rest.icecat.helpers.TextWorker;
 import com.rest.icecat.request.AccessKeyPost;
 import com.rest.icecat.super_user.SuperUserData;
-import org.json.JSONException;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.util.Map;
 
 /**
  * Created by nikita on 07.12.16.
@@ -27,7 +22,7 @@ public class Main {
         superUserData = new SuperUserData();
         JSONParser parser = new JSONParser();
         try {
-            JSONObject json = (JSONObject) parser.parse(superUserData.fullProdDesc);
+            JSONObject json = (JSONObject) parser.parse(superUserData.FULL_PROD_DESC);
             System.out.println(json.get("productId"));
         } catch (ParseException e) {
             e.printStackTrace();

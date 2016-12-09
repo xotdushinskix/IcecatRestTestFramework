@@ -2,6 +2,7 @@ package com.rest.icecat.request;
 
 import com.rest.icecat.helpers.JSONworker;
 import com.rest.icecat.helpers.TextWorker;
+import com.rest.icecat.super_user.SuperUserData;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -17,9 +18,7 @@ import java.io.IOException;
  */
 public class AccessKeyPost {
 
-    private final String ACCESS_KEY_URL = "https://bo.icecat.biz/user/login";
     private final String APP_KEY = "application_key";
-
 
     public void getAccessKey(String requiredKey) {
         String accessKey = null;
@@ -32,8 +31,8 @@ public class AccessKeyPost {
 
         int responseStatus = 0;
         try {
-
-            HttpPost request = new HttpPost(ACCESS_KEY_URL);
+            SuperUserData superUserData = new SuperUserData();
+            HttpPost request = new HttpPost(superUserData.LOGIN_URL);
             StringEntity params = new StringEntity(json.toString());
             request.setEntity(params);
 

@@ -15,7 +15,7 @@ import java.io.IOException;
 /**
  * Created by nikita on 07.12.16.
  */
-public class TestSuperUserForSuperUser extends TestConditionsForSuperUser {
+public class TestSuperUser extends TestConditionsForSuperUser {
 
     private static PostRequest postRequest;
     private static TextWorker textWorker;
@@ -37,10 +37,10 @@ public class TestSuperUserForSuperUser extends TestConditionsForSuperUser {
 
     @Test
     public void testPostWithFullInfo() throws IOException {
-        JSONObject postResponse = postRequest.postRequest(superUserData.fullProdDesc, textWorker.accessKeyReader(),
+        JSONObject postResponse = postRequest.postRequest(superUserData.FULL_PROD_DESC, textWorker.accessKeyReader(),
                 "https://bo.icecat.biz/restful/v2/descriptionblock/");
 
-        String data = superUserData.fullProdDesc;
+        String data = superUserData.FULL_PROD_DESC;
 
         Assert.assertEquals(String.valueOf(postResponse.get("product_id")), jsonWorker.getDataFromJson(data, "productId"));
         Assert.assertEquals(postResponse.get("message"), "Created");
@@ -55,13 +55,13 @@ public class TestSuperUserForSuperUser extends TestConditionsForSuperUser {
 
     @Test
     public void testDelete() throws IOException {
-        postRequest.postRequest(superUserData.fullProdDesc, textWorker.accessKeyReader(),
+        postRequest.postRequest(superUserData.FULL_PROD_DESC, textWorker.accessKeyReader(),
                 "https://bo.icecat.biz/restful/v2/descriptionblock/");
 
-        JSONObject deleteResponse = deleteRequest.deleteRequest(superUserData.fullProdDesc, textWorker.accessKeyReader(),
+        JSONObject deleteResponse = deleteRequest.deleteRequest(superUserData.FULL_PROD_DESC, textWorker.accessKeyReader(),
                 "https://bo.icecat.biz/restful/v2/descriptionblock/");
 
-        String data = superUserData.fullProdDesc;
+        String data = superUserData.FULL_PROD_DESC;
 
         Assert.assertEquals(deleteResponse.get("message"), "Deleted");
         Assert.assertEquals(String.valueOf(deleteResponse.get("product_id")), jsonWorker.getDataFromJson(data, "productId"));

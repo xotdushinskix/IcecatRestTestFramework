@@ -21,15 +21,14 @@ public class TestConditionsForSuperUser {
 
     @BeforeClass
     public static void testAccessKey() throws IOException {
-        AccessKeyPost accessKeyPost = new AccessKeyPost();
-        accessKeyPost.getAccessKey("ASfW9179vRL6U_G_EKPCBc9vBj2C2c1m");
-
         deleteRequest = new DeleteRequest();
         superUserData = new SuperUserData();
         textWorker = new TextWorker();
 
-        deleteRequest.deleteRequest(superUserData.fullProdDesc, textWorker.accessKeyReader(),
-                "https://bo.icecat.biz/restful/v2/descriptionblock/");
+        AccessKeyPost accessKeyPost = new AccessKeyPost();
+        accessKeyPost.getAccessKey(superUserData.REQUIRED_KEY);
+
+        deleteRequest.deleteRequest(superUserData.FULL_PROD_DESC, textWorker.accessKeyReader(), superUserData.URL);
     }
 
 
@@ -37,8 +36,7 @@ public class TestConditionsForSuperUser {
 
     @After
     public void deleteProdDescrip() throws IOException {
-        deleteRequest.deleteRequest(superUserData.fullProdDesc, textWorker.accessKeyReader(),
-                "https://bo.icecat.biz/restful/v2/descriptionblock/");
+        deleteRequest.deleteRequest(superUserData.FULL_PROD_DESC, textWorker.accessKeyReader(), superUserData.URL);
     }
 
 }

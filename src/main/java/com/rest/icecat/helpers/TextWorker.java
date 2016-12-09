@@ -1,5 +1,6 @@
 package com.rest.icecat.helpers;
 
+import com.rest.icecat.super_user.SuperUserData;
 import org.json.simple.JSONObject;
 
 import java.io.*;
@@ -11,11 +12,11 @@ public class TextWorker {
 
 
     public JSONObject textWriter(String requiredString) {
-
+        SuperUserData superUserData = new SuperUserData();
         Writer writer = null;
         try {
             writer = new BufferedWriter(new OutputStreamWriter(
-                    new FileOutputStream("access_key.txt"), "utf-8"));
+                    new FileOutputStream(superUserData.TEXT_FILE_NAME), "utf-8"));
             writer.write(requiredString);
         } catch (IOException ex) {
             System.out.println("Cannot close writer stream");
@@ -33,9 +34,9 @@ public class TextWorker {
 
 
     public String accessKeyReader() throws IOException {
-
+        SuperUserData superUserData = new SuperUserData();
         String content = null;
-        File file = new File("/home/nikita/HomeJava/IcecatRestTestFramework/access_key.txt");
+        File file = new File(superUserData.TEXT_FILE_HOME);
         FileReader reader = null;
         try {
             reader = new FileReader(file);
