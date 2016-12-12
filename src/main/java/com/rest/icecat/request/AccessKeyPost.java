@@ -2,7 +2,7 @@ package com.rest.icecat.request;
 
 import com.rest.icecat.helpers.JSONworker;
 import com.rest.icecat.helpers.TextWorker;
-import com.rest.icecat.super_user.SuperUserData;
+import com.rest.icecat.users.super_user.SuperUserData;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;

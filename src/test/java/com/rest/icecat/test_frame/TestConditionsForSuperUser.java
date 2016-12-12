@@ -3,7 +3,7 @@ package com.rest.icecat.test_frame;
 import com.rest.icecat.helpers.TextWorker;
 import com.rest.icecat.request.AccessKeyPost;
 import com.rest.icecat.request.DeleteRequest;
-import com.rest.icecat.super_user.SuperUserData;
+import com.rest.icecat.users.super_user.SuperUserData;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;

@@ -1,6 +1,6 @@
 package com.rest.icecat.helpers;
 
-import com.rest.icecat.super_user.SuperUserData;
+import com.rest.icecat.users.super_user.SuperUserData;
 import org.json.simple.JSONObject;
 
 import java.io.*;

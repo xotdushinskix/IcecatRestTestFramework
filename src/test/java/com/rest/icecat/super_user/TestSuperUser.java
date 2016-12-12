@@ -6,6 +6,7 @@ import com.rest.icecat.request.DeleteRequest;
 import com.rest.icecat.request.GetRequest;
 import com.rest.icecat.request.PostRequest;
 import com.rest.icecat.test_frame.TestConditionsForSuperUser;
+import com.rest.icecat.users.super_user.SuperUserData;
 import org.json.simple.JSONObject;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -45,8 +46,6 @@ public class TestSuperUser extends TestConditionsForSuperUser {
                 "https://bo.icecat.biz/restful/v2/descriptionblock/");
 
         String data = superUserData.FULL_PROD_DESC;
-
-        System.out.println(postResponse + "   post resp");
 
         Assert.assertEquals(String.valueOf(postResponse.get("product_id")), jsonWorker.getDataFromJson(data, "productId"));
         Assert.assertEquals(postResponse.get("message"), "Created");

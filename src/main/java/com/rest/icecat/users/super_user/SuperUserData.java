@@ -1,4 +1,4 @@
-package com.rest.icecat.super_user;
+package com.rest.icecat.users.super_user;
 
 
 /**
