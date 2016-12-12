@@ -43,4 +43,18 @@ public class JSONworker {
         return requiredValue;
     }
 
+
+
+
+    public JSONObject fromStrToJSON(String data) {
+        JSONParser parser = new JSONParser();
+        JSONObject json = null;
+        try {
+            json = (JSONObject) parser.parse(data);
+        } catch (ParseException e) {
+            System.out.println("Cannot get value from json object");
+        }
+        return json;
+    }
+
 }

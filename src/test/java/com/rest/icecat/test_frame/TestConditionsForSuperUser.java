@@ -5,6 +5,7 @@ import com.rest.icecat.request.AccessKeyPost;
 import com.rest.icecat.request.DeleteRequest;
 import com.rest.icecat.super_user.SuperUserData;
 import org.junit.After;
+import org.junit.Before;
 import org.junit.BeforeClass;
 
 import java.io.IOException;
@@ -27,7 +28,13 @@ public class TestConditionsForSuperUser {
 
         AccessKeyPost accessKeyPost = new AccessKeyPost();
         accessKeyPost.getAccessKey(superUserData.REQUIRED_KEY);
+    }
 
+
+
+
+    @Before
+    public void deleteProdDescBefore() throws IOException {
         deleteRequest.deleteRequest(superUserData.FULL_PROD_DESC, textWorker.accessKeyReader(), superUserData.URL);
     }
 
@@ -38,5 +45,8 @@ public class TestConditionsForSuperUser {
     public void deleteProdDescrip() throws IOException {
         deleteRequest.deleteRequest(superUserData.FULL_PROD_DESC, textWorker.accessKeyReader(), superUserData.URL);
     }
+
+
+
 
 }

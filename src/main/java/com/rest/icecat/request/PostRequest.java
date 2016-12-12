@@ -39,7 +39,7 @@ public class PostRequest {
         try {
 
             String fullURL = url + productInfo.get("productId") + "?" + "access_key=" + accessKey + "&langid="
-                    + productInfo.get("langId") + "&short_desc=" + "sha" + "&session_type=" + "rest";
+                    + productInfo.get("langId") + "&short_desc=" + productInfo.get("shortDescrip") + "&session_type=" + "rest";
 
             HttpPost request = new HttpPost(fullURL);
 
@@ -67,6 +67,7 @@ public class PostRequest {
         }
 
         return responseBody;
+
     }
 
 }

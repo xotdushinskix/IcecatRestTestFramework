@@ -27,10 +27,10 @@ public class AccessKeyPost {
         json.put(APP_KEY, requiredKey);
 
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-
-
         int responseStatus = 0;
+
         try {
+
             SuperUserData superUserData = new SuperUserData();
             HttpPost request = new HttpPost(superUserData.LOGIN_URL);
             StringEntity params = new StringEntity(json.toString());
@@ -45,8 +45,6 @@ public class AccessKeyPost {
             textWorker.textWriter(accessKey);
             responseStatus = httpResponse.getStatusLine().getStatusCode();
 
-
-
         } catch (Exception ex) {
             System.out.println("Cannot make accessKey post request");
         } finally {
@@ -56,7 +54,6 @@ public class AccessKeyPost {
                 System.out.println("Cannot close httpClient");
             }
         }
-
 
         assert (responseStatus == 200);
         assert (accessKey.length() != 0);

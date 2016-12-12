@@ -35,8 +35,8 @@ public class DeleteRequest {
         int responseStatus = 0;
         try {
 
-            String fullURL = url + productInfo.get("productId") + "?" + "access_key=" + accessKey + "&langid="
-                    + productInfo.get("langId") + "&short_desc=" + "sha" + "&session_type=" + "rest";
+            String fullURL = url + productInfo.get("productId") + "?"  + "access_key=" + accessKey + "&langid=" +
+                    productInfo.get("langId")  + "&session_type=" + "rest";
 
             HttpDelete request = new HttpDelete(fullURL);
 

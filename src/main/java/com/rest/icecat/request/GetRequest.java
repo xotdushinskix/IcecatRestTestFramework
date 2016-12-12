@@ -1,53 +1,61 @@
 package com.rest.icecat.request;
 
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * Created by nikita on 08.12.16.
  */
 public class GetRequest {
 
-    public void getRequest(String url) {
+    public JSONObject getRequest(String postData, String accessKey, String url) {
 
-        //String url = "http://www.google.com/search?q=httpClient";
+        JSONObject productInfo = new JSONObject();
+        JSONParser parser = new JSONParser();
 
-        HttpClient client = HttpClientBuilder.create().build();
-        HttpGet request = new HttpGet(url);
+        JSONObject responseBody = null;
 
-        HttpResponse response = null;
+        int responseStatus = 0;
         try {
-            response = client.execute(request);
+            productInfo = (JSONObject) parser.parse(postData);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        String fullURL = url + productInfo.get("productId") + "?" + "access_key=" + accessKey + "&langid="
+                + productInfo.get("langId") +  "&session_type=" + "rest";
+
+        HttpClient httpClient = HttpClientBuilder.create().build();
+        HttpGet request = new HttpGet(fullURL);
+
+        HttpResponse httpResponse = null;
+        try {
+            httpResponse = httpClient.execute(request);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        HttpEntity entity = httpResponse.getEntity();
+        try {
+            responseBody = (JSONObject) parser.parse(EntityUtils.toString(entity, "UTF-8"));
+        } catch (ParseException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        System.out.println("Response Code : "
-                + response.getStatusLine().getStatusCode());
+        responseStatus = httpResponse.getStatusLine().getStatusCode();
+        responseBody.put("responseStatus", responseStatus);
 
-        BufferedReader rd = null;
-        try {
-            rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        StringBuffer result = new StringBuffer();
-        String line = "";
-        try {
-            while ((line = rd.readLine()) != null) {
-                result.append(line);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        return responseBody;
     }
 
 }
