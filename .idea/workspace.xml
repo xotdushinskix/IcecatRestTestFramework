@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a99ca297-9359-4ab2-a0d2-9dfc059bfc9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rest/icecat/helpers/JSONworker.class" afterPath="$PROJECT_DIR$/target/classes/com/rest/icecat/helpers/JSONworker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rest/icecat/request/AccessKeyPost.class" afterPath="$PROJECT_DIR$/target/classes/com/rest/icecat/request/AccessKeyPost.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rest/icecat/request/DeleteRequest.class" afterPath="$PROJECT_DIR$/target/classes/com/rest/icecat/request/DeleteRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rest/icecat/request/GetRequest.class" afterPath="$PROJECT_DIR$/target/classes/com/rest/icecat/request/GetRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rest/icecat/request/PostRequest.class" afterPath="$PROJECT_DIR$/target/classes/com/rest/icecat/request/PostRequest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rest/icecat/super_user/SuperUserData.class" afterPath="$PROJECT_DIR$/target/classes/com/rest/icecat/super_user/SuperUserData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/rest/icecat/super_user/TestSuperUser.class" afterPath="$PROJECT_DIR$/target/test-classes/com/rest/icecat/super_user/TestSuperUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/rest/icecat/test_frame/TestConditionsForSuperUser.class" afterPath="$PROJECT_DIR$/target/test-classes/com/rest/icecat/test_frame/TestConditionsForSuperUser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rest/icecat/helpers/JSONworker.java" afterPath="$PROJECT_DIR$/src/main/java/com/rest/icecat/helpers/JSONworker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/AccessKeyPost.java" afterPath="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/AccessKeyPost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/DeleteRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/DeleteRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/GetRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/GetRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/PostRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/PostRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rest/icecat/super_user/SuperUserData.java" afterPath="$PROJECT_DIR$/src/main/java/com/rest/icecat/super_user/SuperUserData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/rest/icecat/super_user/TestSuperUser.java" afterPath="$PROJECT_DIR$/src/test/java/com/rest/icecat/super_user/TestSuperUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/rest/icecat/test_frame/TestConditionsForSuperUser.java" afterPath="$PROJECT_DIR$/src/test/java/com/rest/icecat/test_frame/TestConditionsForSuperUser.java" />
     </list>
     <ignored path="IcecatRestTestFramework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +31,8 @@
       <file leaf-file-name="AccessKeyPost.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/icecat/request/AccessKeyPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+            <state relative-caret-position="997">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSuperUser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestSuperUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/rest/icecat/super_user/TestSuperUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="102" column="90" selection-start-line="102" selection-start-column="90" selection-end-line="102" selection-end-column="90" />
+            <state relative-caret-position="532">
+              <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuperUserData.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SuperUserData.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/icecat/super_user/SuperUserData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="27" column="58" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="58" />
+            <state relative-caret-position="180">
+              <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -126,8 +111,8 @@
       <file leaf-file-name="TestConditionsForSuperUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/rest/icecat/test_frame/TestConditionsForSuperUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+            <state relative-caret-position="97">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,8 +162,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/DeleteRequest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/rest/icecat/test_frame/TestConditionsForSuperUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rest/icecat/request/GetRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rest/icecat/super_user/SuperUserData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/rest/icecat/super_user/TestSuperUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rest/icecat/super_user/SuperUserData.java" />
       </list>
     </option>
   </component>
@@ -985,20 +970,11 @@
       <option name="presentableId" value="Default" />
       <updated>1481114304946</updated>
       <workItem from="1481114308222" duration="53735000" />
-      <workItem from="1481531754921" duration="18305000" />
+      <workItem from="1481531754921" duration="18514000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSuperUser_testGet - 2016.12.12 at 16h 42m 32s.xml">
-      <configuration name="TestSuperUser.testGet" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSuperUser_testGet - 2016.12.12 at 16h 44m 54s.xml">
-      <configuration name="TestSuperUser.testGet" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSuperUser_testGet - 2016.12.12 at 16h 46m 21s.xml">
-      <configuration name="TestSuperUser.testGet" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestSuperUser_testGet - 2016.12.12 at 16h 48m 11s.xml">
       <configuration name="TestSuperUser.testGet" configurationId="JUnit" />
     </history-entry>
@@ -1020,9 +996,18 @@
     <history-entry file="TestSuperUser_testGet - 2016.12.12 at 16h 54m 19s.xml">
       <configuration name="TestSuperUser.testGet" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestSuperUser_testGet - 2016.12.12 at 16h 55m 32s.xml">
+      <configuration name="TestSuperUser.testGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuperUser_testGet - 2016.12.12 at 16h 57m 52s.xml">
+      <configuration name="TestSuperUser.testGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuperUser_testGet - 2016.12.12 at 16h 58m 48s.xml">
+      <configuration name="TestSuperUser.testGet" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72040000" />
+    <option name="totallyTimeSpent" value="72249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1056" extended-state="0" />
@@ -1036,7 +1021,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31056562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28966987" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28922093" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1091,7 +1076,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/rest/icecat/super_user/TestSuperUser.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1231,44 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/icecat/request/AccessKeyPost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/icecat/request/DeleteRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rest/icecat/test_frame/TestConditionsForSuperUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/access_key.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/icecat/request/GetRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1289,21 +1244,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/icecat/super_user/SuperUserData.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/rest/icecat/super_user/TestSuperUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="58" />
+        <state relative-caret-position="532">
+          <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/rest/icecat/test_frame/TestConditionsForSuperUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/access_key.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rest/icecat/super_user/TestSuperUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/icecat/request/AccessKeyPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="102" column="90" selection-start-line="102" selection-start-column="90" selection-end-line="102" selection-end-column="90" />
+        <state relative-caret-position="997">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/icecat/request/DeleteRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/icecat/super_user/SuperUserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
