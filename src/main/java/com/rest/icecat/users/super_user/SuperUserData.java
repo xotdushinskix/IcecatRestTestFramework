@@ -37,4 +37,28 @@ public class SuperUserData {
 
 
 
+    public final String FULL_PROD_DESC_PATCH = "{\"productId\":\"22655827\", \"langId\":\"1\", \"shortDescrip\":\"test_short_description_superUser_patch\"," +
+            "\"fullInfo\":{\"long_desc\": \"Marketing text: <b>Text may contain html tags_patch!!!</b>\"," +
+            "\"official_url\":\"http://www.get.com/da_dk/drive/car/products/go-60-europe-patch/\"," +
+            "\"warranty_info\":\"warranty_info test_patch\"," +
+            "\"seo_title\":\"seo_title test_patch\"," +
+            "\"seo_description\":\"seo_description test patch\"," +
+            "\"seo_keywords\":\"seo_keywords test patch\"," +
+            "\"disclaimer\":\"disclaimer test patch\"," +
+            "\"middle_desc\":\"middle_desc test patch\"}}";
+
+
+
+    public final String FULL_PROD_DESC_PUT = "{\"productId\":\"22655827\", \"langId\":\"1\", \"shortDescrip\":\"test_short_description_superUser_put\"," +
+            "\"fullInfo\":{\"long_desc\": \"Marketing text: <b>Text may contain html tags_put!!!</b>\"," +
+            "\"official_url\":\"http://www.get.com/da_dk/drive/car/products/go-60-europe-put/\"," +
+            "\"warranty_info\":\"warranty_info test_put\"," +
+            "\"seo_title\":\"seo_title test_put\"," +
+            "\"seo_description\":\"seo_description test put\"," +
+            "\"seo_keywords\":\"seo_keywords test put\"," +
+            "\"disclaimer\":\"disclaimer test put\"," +
+            "\"middle_desc\":\"middle_desc test put\"}}";
+
+
+
 }
